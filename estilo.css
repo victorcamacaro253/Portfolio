@@ -1,17 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+
+:root{
+
+    --color-primary:#7280ec;
+    --color-danger:#ff7782;
+    --color-success:#41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#fff;
+    --color:#fff;
+    --color-background-1:#1e2326;
+    --color-background-2:#252A2E;
+    --color-background-3:#252a2e;
+    --color-b:#5dfe;
+   --color-1:#1CB698;
+
+}
+
+
+
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
     margin: 0;
     padding: 0;
 }
+
+
+
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+
+
+
+
+
+.dark-theme-variables{
+    --color-background-1: #FBF6F6; 
+    --color-background-2:#fbf6f6;
+    --color-background-3:#FBECD7;
+	--color-white: #202528;
+	--color-dark: #edeffd;
+	--color-dark-variant:#a3bdcc;
+	--color-light:rgba(0,0,0,0.4);
+	--box-shadow: 0 2rem 3rem var(--color-light);
+
+--color-1: #131517;
+--color:#131517;
+}
+
+.theme-toggler{
+	background:  #FBF6F6;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 1.5rem;
+	width: 3.5rem;
+	cursor: pointer;
+	border-radius: 0.4rem;
+	margin-right: 25px;
+    margin-left: 15px;
+
+
+}
+
+.theme-toggler span{
+	font-size: 1.2rem;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.theme-toggler span.active{
+	background: #7280ec;
+	color: white;
+	border-radius: 0.4rem;
+}
+
+
 /* MENU */
 .contenedor-header{
-    background: #1e2326;
+    background: var(--color-background-1);
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,9 +99,17 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
+
+.contenedor-header header .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+ }
 .contenedor-header header .logo a{
     font-family: 'Righteous';
-    font-size: 36px;
+    font-size: 20px;
     color: #1CB698;
     text-decoration: none;
 }
@@ -38,7 +119,7 @@ html{
 }
 .contenedor-header header nav ul li a{
     text-align: none;
-    color: #fff;
+    color: var(--color);
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
@@ -50,12 +131,14 @@ html{
 
 .nav-responsive{
     background-color: #1CB698;
-    color: #fff;
+    color: var(--color);
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
 }
+
+
 
 /* seccion inicio */
 
@@ -64,14 +147,14 @@ html{
     url(images/fondo.jpg);
     background-size: cover;
     height:100vh;
-    color: #fff;
+    color: var(--color);
     display: flex;
     align-items: center;
 }
 
 .inicio .contenido-banner{
     padding: 20px;
-    background-color: #1e2326;
+    background-color: var(--color-background-1);
     max-width: 350px;
     margin: auto;
     text-align: center;
@@ -92,21 +175,24 @@ html{
 }
 
 .inicion .contenido-banner h1{
+    color: var(--color);
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Righteous';
+
 }
 
 .inicio .contenido-banner h2{
     font-size: 15px;
     font-weight: normal;
+    color: var(--color);
 }
 
 .inicio .contenido-banner .redes a{
-    color: #fff;
+    color: var(--color);
     display: inline-block;
     text-decoration: none;
-    border:1px solid #fff;
+    border:1px solid var(--color);
     border-radius: 100%;
     width: 45px;
     height: 42px;
@@ -120,8 +206,8 @@ html{
 }
 
 .sobremi{
-    background-color:#1e2326;
-    color: #fff;
+    background-color:var(--color-background-1);
+    color: var(--color);
     padding: 50px 20px; 
 }
 
@@ -187,7 +273,7 @@ html{
 .sobremi .fila .col .contenedor-intereses .interes{
     width: 100px;
     height: 100px;
-    background-color: #252A2E;
+    background-color: var(--color-background-3);
     border-radius: 10px;
     margin: 0 15px 15px 0;
     display: flex;
@@ -195,6 +281,7 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
+    cursor: pointer;
 }
 
 .sobremi .fila .col .contenedor-intereses .interes:hover{
@@ -209,13 +296,13 @@ html{
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
-    border:2px solid #fff;
+    border:2px solid var(--color);
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: var(--color);
     position: relative;
     z-index: 10;
 }
@@ -236,7 +323,7 @@ html{
 /* seccion skills*/
 
 .skills{
-    background-color: #252A2E;
+    background-color: var(--color-background-3);
     color: #fff;
     padding: 50px 20px;
 
@@ -251,6 +338,7 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    color: var(--color);
 }
 .skills .fila{
     display: flex;
@@ -262,12 +350,14 @@ html{
 }
 
 .skills .fila .col h3{
+    color:var(--color);
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
 
 .skills .skill > span{
+    color: var(--color);
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
@@ -421,7 +511,7 @@ html{
 /* seccion curriculum */
 
 .curriculum{
-    background-color: #1e2326;
+    background-color: var(--color-background-1);
     color: #fff;
     padding: 50px 20px;
 }
@@ -431,6 +521,7 @@ html{
 }
 
 .curriculum h2{
+    color: var(--color);
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
@@ -448,6 +539,7 @@ html{
 }
 
 .curriculum .fila .col h3{
+    color: var(--color);
     font-size: 28px;
     font-family:'Righteous';
     margin-bottom: 25px;
@@ -462,11 +554,12 @@ html{
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #252A2E;
+    background-color:var(--color-background-3);
     position: relative;
 }
 
 .curriculum .fila .item h4{
+    color: var(--color);
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -485,6 +578,7 @@ html{
 }
 
 .curriculum .fila .item p{
+    color: var(--color);
     line-height: 24px;
 }
 
@@ -544,7 +638,7 @@ html{
 /* seccion portfolio */
 
 .portfolio{
-    background-color: #252A2E;
+    background-color: var(--color-background-3);
     color: #fff;
     padding: 50px 20px;
 }
@@ -554,6 +648,7 @@ html{
     margin: auto;
 }
 .portfolio h2{
+    color: var(--color);
     font-size: 48px;
     font-family:'Righteous';
     text-align: center;
@@ -609,16 +704,17 @@ html{
  /* seccion contacto */
  .contacto{
     background-image:url(images/contact_bg.png);
-    background-color: #1e2326;
+    background-color: var(--color-background-1);
     color: #fff;
     padding: 50px 0; 
  }
- }
+ 
 .contacto .contenido-seccion{
     max-width: 1100px;
     margin: auto;
 }
 .contacto h2{
+    color: var(--color);
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
@@ -638,20 +734,20 @@ html{
     padding: 18px;
     border: none;
     margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
+    background-color: var(--color-background-3);
+    color: var(--color);
     font-size: 18px;
 }
 .contacto button{
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid var(--color);
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: var(--color);
     position: relative;
     z-index: 10;
 }
@@ -696,7 +792,7 @@ html{
 }
 
 footer{
-    background-color: #252A2E;
+    background-color: var(--color-background-3);
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
@@ -708,10 +804,10 @@ footer .redes{
 }
 
 footer .redes a{
-    color: #fff;
+    color: var(--color);
     display: inline-block;;
     text-decoration: none;
-    border:1px solid #fff;
+    border:1px solid var(--color);
     border-radius: 100%;
     width: 42px;
     height: 42%;
@@ -746,6 +842,13 @@ footer .arriba{
 @media screen and (max-width: 980px){
     nav{
         display: none;
+    }
+    #nav ul  {
+        background-color: var(--color-background-1);
+    }
+    
+    #nav ul li{
+        border-bottom: 1px solid var(--color);
     }
     .nav-responsive{
         display: block;

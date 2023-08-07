@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio</title>
+	<title>Victor Camacaro</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css"/>
 </head>
 <body>
 
@@ -15,10 +18,15 @@
 		<header>
 			<div class="logo">
 				<a href="#">Victor</a>
+				<div class="theme-toggler">
+					<span class="material-icons-sharp ">light_mode</span>
+					<span class="material-icons-sharp active">dark_mode</span>
+					
+				</div>
 				
 			</div>
 			<nav id="nav" >
-				<ul>
+				<ul class="ul">
 					<li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
 					<li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
 					<li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
@@ -105,8 +113,8 @@
 						<h3>Intereses</h3>
 						<div class="contenedor-intereses">
 							<div class="interes">
-								<i class="fa-solid fa-gamepad"></i>
-								<span>JUEGOS</span>
+								<i class="fa-solid fa-code"></i>
+								<span>CODE</span>
 								
 							</div>
 
@@ -117,8 +125,8 @@
 							</div>
 
 							<div class="interes">
-								<i class="fa-solid fa-plane"></i>
-								<span>VIAJAR</span>
+								<i class="fa-solid fa-database"></i>
+								<span>BD</span>
 								
 							</div>
 
@@ -446,7 +454,7 @@
 	<!-- seccion protfolio -->
 	<section id="portfolio" class="portfolio">
 		<div class="contenido-seccion">
-			<h2>PORTFOLIO</h2>
+			<h2>PORTAFOLIO</h2>
 			<div class="galeria">
 				<div class="proyecto">
 					<img src="images/REDES.jpeg" style="height: 255px;">
