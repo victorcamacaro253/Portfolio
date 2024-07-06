@@ -836,6 +836,28 @@ footer .arriba{
     font-size: 18px;
 }
 
+.anuncio {
+    opacity: 0; /* Empieza con opacidad 0 */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
+    position: fixed;
+    font-size: 20px;
+    color:white;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    background-color: #1CB698;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+.anuncio.mostrar {
+    opacity: 1; /* Mostrar con opacidad completa */
+    transform: translateX(-50%) translateY(0); /* Mostrar desde abajo */
+}
+
 
 /* seccion responsive */
 

@@ -61,3 +61,13 @@ window.onscroll=function(){
 
 }
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    var anuncio = document.getElementById("anuncio");
+    anuncio.classList.add("mostrar");
+});
+
+function cerrarAnuncio() {
+    var anuncio = document.getElementById("anuncio");
+    anuncio.style.display = "none";
+}
