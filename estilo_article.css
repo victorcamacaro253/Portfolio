@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+*{
+	margin:0;
+	border: 0;
+	font-family: 'Work Sans';
+
+}
+
+
+.header{
+    background-image: linear-gradient(to right,#D8DCC5,#67F7CD);
+    width: 100%;
+}
+
