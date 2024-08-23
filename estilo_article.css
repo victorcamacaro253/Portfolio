@@ -133,3 +133,18 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
+
+	@media (max-width: 768px) {
+		footer {
+			flex-direction: column;
+		}
+		footer .info {
+			margin-bottom: 20px;
+			width: 100%;
+		}
+		footer .redes {
+			justify-content: center;
+		}
+	}
+
