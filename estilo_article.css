@@ -14,3 +14,66 @@
     width: 100%;
 }
 
+footer{
+    background-image: linear-gradient(to right,#D8DCC5,#67F7CD);
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+	
+}
+footer .info ul {
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove bullet points */
+	margin-left: 25px;
+	margin-top: 5px;
+}
+
+footer .info li {
+    color: #252a2e;
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically align the icon and text */
+    margin-bottom: 10px; /* Add some space between list items */
+}
+
+footer .info li i {
+    margin-right: 8px; /* Space between icon and text */
+}
+footer .redes{
+    margin-bottom: 0px;
+}
+
+footer .redes a{
+    color: #252a2e;
+    display: inline-block;;
+    text-decoration: none;
+    border:1px solid #252a2e;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+ footer .redes a:hover{
+    background-color: #1CB698;
+	color:#fff;
+ }
+
+footer .arriba{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
