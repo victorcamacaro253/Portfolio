@@ -15,7 +15,7 @@
 }
 .header-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px; /* Increase the size */
+    font-size: 20px; /* Increase the size */
     font-weight: 600; /* Semi-bold for better visibility */
     letter-spacing: 1.5px; /* Adds spacing between letters */
     text-transform: uppercase; /* Converts text to uppercase */
@@ -26,6 +26,21 @@
     margin-left: 20px; /* Space between image and text */
     margin-right: 20px; /* Space between text and next image */
 }
+
+.profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #007BFF;
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    padding: 4px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+.profile:hover {
+    filter: brightness(1.2);
+    transform: translateY(-5px);
+}
+
 footer{
     background-image: linear-gradient(to right,#D8DCC5,#67F7CD);
     color: #fff;
@@ -136,6 +151,9 @@ footer .arriba{
 
 
 	@media (max-width: 768px) {
+		.header{
+			width: 100%;
+		}
 		footer {
 			flex-direction: column;
 		}
