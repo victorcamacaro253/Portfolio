@@ -164,5 +164,9 @@ footer .arriba{
 		footer .redes {
 			justify-content: center;
 		}
+
+        .logo{
+            display: none;
+        }
 	}
 
