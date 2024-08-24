@@ -55,6 +55,10 @@
     transform: translateY(-5px);
 }
 
+p{
+    font-weight: 600;
+}
+
 footer{
      background-image: radial-gradient(circle, #67F7CD, #D8DCC5);
     color: #fff;
