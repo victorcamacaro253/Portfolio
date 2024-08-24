@@ -10,8 +10,11 @@
 
 
 .header{
-    background-image: linear-gradient(to right,#D8DCC5,#67F7CD);
+  background-image: radial-gradient(circle, #67F7CD, #D8DCC5);
     width: 100%;
+    opacity: 0.9; /* Ajustar opacidad */
+    backdrop-filter: blur(35px); /* Añade un desenfoque */
+
 }
 .header-title {
     font-family: 'Poppins', sans-serif;
@@ -25,6 +28,7 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
     margin-left: 20px; /* Space between image and text */
     margin-right: 20px; /* Space between text and next image */
+    
 }
 
 .profile{
