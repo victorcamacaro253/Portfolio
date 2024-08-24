@@ -192,5 +192,15 @@ border-radius: 5px;
        
      </div>
     </footer>
+
+
+
+    <script>
+      window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    header.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+    </script>
 </body>
 </html>
