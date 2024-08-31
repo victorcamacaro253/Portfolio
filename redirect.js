@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (language === 'Spanish') {
                 window.location.href = '/index.html'; // Página en español
             } else {
-                window.location.href = '/index-other.html'; // Página para otros idiomas
+                window.location.href = '/index - ingles.html'; // Página para otros idiomas
             }
         });
 
