@@ -3,8 +3,8 @@
    const userLang = navigator.language || navigator.userLanguage;
 
    // Redirigir a la versión en español si el idioma es español
-   if (userLang.startsWith('es')) {
-	   window.location.href = 'index_es.html';
+   if (userLang.startsWith('en')) {
+	   window.location.href = 'index - ingles';
    }
 
 
