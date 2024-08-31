@@ -1,3 +1,15 @@
+
+   // Detectar el idioma del navegador
+   const userLang = navigator.language || navigator.userLanguage;
+
+   // Redirigir a la versión en español si el idioma es español
+   if (userLang.startsWith('es')) {
+	   window.location.href = 'index_es.html';
+   }
+
+
+
+
 let menuVisible=false;
 const themeToggler=document.querySelector(".theme-toggler");
 
