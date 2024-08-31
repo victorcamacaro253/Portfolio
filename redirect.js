@@ -60,6 +60,23 @@ document.addEventListener('DOMContentLoaded', function() {
         messageContainer.style.border = '1px solid #ddd';
         messageContainer.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
         messageContainer.style.zIndex = '1000';
+        
+
+        const closeButton = document.createElement('button');
+        closeButton.textContent = 'X';
+        closeButton.style.position = 'absolute';
+        closeButton.style.top = '5px';
+        closeButton.style.right = '5px';
+        closeButton.style.border = 'none';
+        closeButton.style.backgroundColor = 'transparent';
+        closeButton.style.color = '#000';
+        closeButton.style.fontSize = '16px';
+        closeButton.style.cursor = 'pointer';
+
+
+        closeButton.addEventListener('click', function() {
+            messageContainer.style.display = 'none'; // Ocultar el contenedor
+        });
 
         const messageText = document.createElement('p');
         messageText.textContent = `We detected that you are in ${language === 'Spanish' ? 'Spain' : 'the United States'}. It is better to use the ${language} version of the site.`;
@@ -83,6 +100,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
+
+        messageContainer.appendChild(closeButton);
         messageContainer.appendChild(messageText);
         messageContainer.appendChild(redirectButton);
 
