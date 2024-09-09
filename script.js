@@ -83,3 +83,10 @@ function cerrarAnuncio() {
     var anuncio = document.getElementById("anuncio");
     anuncio.style.display = "none";
 }
+
+function descargarCV() {
+    var link = document.createElement('a');
+    link.href = '-curriculum-vitae-VICTOR.pdf';
+    link.download = '-curriculum-vitae-VICTOR.pdf';
+    link.click();
+  }
