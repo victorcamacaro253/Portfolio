@@ -10,6 +10,10 @@
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css"/>
 	  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
 </head>
 <body>
@@ -92,22 +96,48 @@
 
     <section class="skills">
         <div class="container mt-5">
-            <h2>Sobre mi</h2>
+            <h2>Conoce mi Historia</h2>
         
-            <div class="row align-items-center">
+            <div class="row align-items-center"  data-aos="zoom-in">
                 <!-- Columna para la imagen -->
                 <div class="col-lg-6 text-center mb-4">
-                    <img src="images/victor.jpg" class="img-fluid" style="max-height: 400px; border-radius: 10px;" alt="Victor camacaro">
+                    <img src="images/victor.jpg" class="img-fluid" style="max-height: 400px; border-radius: 10px; border: 4px solid #41f1b6;" alt="Victor camacaro">
                 </div>
         
                 <!-- Columna para el texto -->
-                <div class="col-lg-6">
-                    <p>
-                      Nacido en Carora,estado Lara Venezuela un 30 de Marzo de 1999,hijo de la profesora Ana Alvarez y profesor Victor Camacaro ,en el hospital Dr Pastor Oropez a las 11:30 pm,
-                      proveniente de  una familia humilde sin lujos ,las ganas de superacion y determinacion de mi mama nos llevo a ir poco a poco mejorando nuestra situacion  economica ,mis primeros fueron llenos de amor sin tener mucho pero con una mama que trbajaba para darme lo necesatio,viviamos arrimado hasta que se pudo comprar una casa propia que para el momento era un rancho ,ese año igual nacia mi hermana roxana camacaro ,poco a poco con esfuero trabajo y dedicacion ese rancho se convirtiendo en una casa 
+                <div class="col-lg-6" style="border-left: 2px solid #41f1b6; padding-bottom: 10px;">
+                    <p class="animated-text">
+                      Nací en Carora, estado Lara, Venezuela, el 30 de marzo de 1999, hijo de Ana Álvarez, una dedicada profesora, y Víctor Camacaro, también profesor. Llegué al mundo en el hospital Dr. Pastor Oropeza a las 11:30 p.m., en el seno de una familia humilde, de bajos recursos, pero llena de amor. Aunque no tuvimos lujos, las ganas de superación de mi madre fueron el motor que nos impulsó a mejorar poco a poco nuestra situación económica.
+                    </p>
+                    <br>
+                    <p class="animated-text">
+
+                      Mis primeros años estuvieron marcados por el amor y el esfuerzo de mi madre, quien trabajaba arduamente para asegurarse de que no me faltara lo esencial. Vivíamos en una casa prestada, hasta que, con mucho sacrificio, logramos adquirir nuestro propio hogar. En ese momento, la casa no era más que un rancho, pero ese mismo año nació mi hermana, Roxana Camacaro, y con trabajo, dedicación y esfuerzo, fuimos transformando poco a poco ese rancho en un verdadero hogar.
+                      </p>
+                      <br>
+                      <p class="animated-text">
+                      Esta historia me recuerda una frase de Nelson Mandela: "Siempre parece imposible hasta que se hace". Nuestra vida ha sido un reflejo de esa verdad, demostrando que con determinación y esfuerzo, se puede construir algo grande a partir de lo más humilde.
 
                     </p>
-     
+                    <div class="conectori" style="height: 2px;
+                    background-color: #1CB698;
+                    width: 47px;
+                    position: absolute;
+                    top: 50%;
+                    left: -47px;
+                    z-index: 5;">
+                      <div class="circuloi" style="    display: block;
+                      height: 10px;
+                      width: 10px;
+                      border-radius: 50%;
+                      background-color: #1CB698;
+                      float: left;
+                      position: relative;
+                      bottom: 4px;">
+                        
+                      </div>
+                      
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,9 +148,197 @@
     </section>
 
     <section class="sobremi">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius nisi deleniti, optio praesentium in error nostrum facilis omnis obcaecati dolor aspernatur cum ipsam consequuntur dolore. Ab sequi totam eum velit?</p>
+      <h2>Mis Primeros Años</h2>
+      <div class="container">
+        <div class="row" data-aos="fade-up">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="image-container">
+              <img class="img-fluid currentImage" src="images/victor1.jpg" alt="Imagen 1">
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="image-container">
+              <img class="img-fluid currentImage1" src="images/system.jpg" alt="Imagen 2">
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="image-container">
+              <img class="img-fluid currentImage2" src="images/victor1.jpg" alt="Imagen 3">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 
+
+
+    <section class="skills">
+    
+    </section>
+    
+    
+
+   <!--footer-->
+   <footer style="border-top: 2px solid #41f1b6;">
+    <a href="#inicio" class="arriba">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <div class="redes">
+     <a href="https://m.facebook.com/100000134262241"><i class="fa-brands fa-facebook-f"></i></a>
+     <a href="https://mobile.twitter.com/victorcamacar19"><i class="fa-brands fa-x-twitter"></i></a>
+     <a href="https://github.com/victorcamacaro253"><i class="fa-brands fa-github"></i></a>
+     <a href="https://www.linkedin.com/in/victor-camacaro-3634641a5"><i class="fa-brands fa-linkedin-in"></i></a>
+     <a href="https://www.instagram.com/victorcamacaro1999/"><i class="fa-brands fa-instagram"></i></a>
+     <a href="https://www.youtube.com/@VictorCamacaro253"><i class="fa-brands fa-youtube"></i></a>
+     
+     
+   </div>
+  </footer>
+
+  <script>
+   
+   document.addEventListener("DOMContentLoaded", function() {
+      // Selecciona todos los elementos con la clase animated-text
+      const textElements = document.querySelectorAll('.animated-text');
+      
+      // Divide el texto en caracteres para cada elemento
+      textElements.forEach(element => {
+        const characters = element.textContent.split('').map(char => `<span>${char}</span>`).join('');
+        element.innerHTML = characters;
+      });
+      
+      // Aplica la animación a cada carácter
+      anime({
+        targets: '.animated-text span',
+        opacity: [0, 1],
+        translateY: [20, 0],
+        easing: 'easeOutExpo',
+        duration: 50,
+        delay: anime.stagger(30),
+      });
+    });
+
+
+  const images = [
+  'images/1721324524513.jpg',
+  'images/ingvictor.jpg',
+  'images/victor1.jpg',
+  'images/logo.png',
+  'images/system.jpg'
+];
+
+let currentIndex = 0;
+
+function changeImage() {
+  // Obtén todos los elementos con la clase 'currentImage'
+  const imageElements = document.querySelectorAll('.currentImage');
+  currentIndex = (currentIndex + 1) % images.length;
+
+  // Animación de fade out para todas las imágenes
+  gsap.to(imageElements, {opacity: 0, duration: 1, onComplete: () => {
+    // Cambia el src de todas las imágenes
+    imageElements.forEach((img) => {
+      img.src = images[currentIndex];
+    });
+    // Animación de fade in para todas las imágenes
+    gsap.to(imageElements, {opacity: 1, duration: 1});
+  }});
+}
+
+// Cambiar la imagen cada 3 segundos
+setInterval(changeImage, 5000);
+
+
+
+const imagenes = [
+ 
+  'images/ingvictor.jpg',
+  
+  'images/1721324524513.jpg',
+  'images/nasa.jpg',
+  'images/logo.png',
+  'images/victor1.jpg'
+];
+
+
+function changeImagenes() {
+  // Obtén todos los elementos con la clase 'currentImage'
+  const imagenesElements = document.querySelectorAll('.currentImage1');
+  currentIndex = (currentIndex + 1) % imagenes.length;
+
+  // Animación de fade out para todas las imágenes
+  gsap.to(imagenesElements, {opacity: 0, duration: 1, onComplete: () => {
+    // Cambia el src de todas las imágenes
+    imagenesElements.forEach((img) => {
+      img.src = imagenes[currentIndex];
+    });
+    // Animación de fade in para todas las imágenes
+    gsap.to(imagenesElements, {opacity: 1, duration: 1});
+  }});
+}
+
+// Cambiar la imagen cada 3 segundos
+setInterval(changeImagenes, 5000);
+
+
+
+const imagenes2 = [
+ 
+'images/nasa.jpg',
+  'images/1721324524513.jpg', 
+  'images/victor1.jpg',
+  'images/ingvictor.jpg',
+  'images/logo.png',
+];
+
+
+function changeImagenes2() {
+  // Obtén todos los elementos con la clase 'currentImage'
+  const imagenesElements = document.querySelectorAll('.currentImage2');
+  currentIndex = (currentIndex + 1) % imagenes2.length;
+
+  // Animación de fade out para todas las imágenes
+  gsap.to(imagenesElements, {opacity: 0, duration: 1, onComplete: () => {
+    // Cambia el src de todas las imágenes
+    imagenesElements.forEach((img) => {
+      img.src = imagenes2[currentIndex];
+    });
+    // Animación de fade in para todas las imágenes
+    gsap.to(imagenesElements, {opacity: 1, duration: 1});
+  }});
+}
+
+// Cambiar la imagen cada 3 segundos
+setInterval(changeImagenes2, 5000);
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Animar imágenes al hacer scroll
+gsap.from('.image-container img', {
+  scrollTrigger: {
+    trigger: '.row', // Activa cuando el contenedor `.row` está en el viewport
+    start: 'top 80%', // Comienza cuando el top de `.row` alcanza el 80% de la pantalla
+  },
+  opacity: 0,        // Inicia con opacidad 0 (invisible)
+  y: 50,             // Comienza 50px más abajo
+  duration: 1.5,     // Duración de la animación
+  stagger: 0.3,      // Retraso entre cada imagen
+  ease: 'power2.out' // Efecto de easing suave
+});
+
+  </script>
+  
+  
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+
+      
+    </script>
 </body>
 </html>
