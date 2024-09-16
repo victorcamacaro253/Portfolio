@@ -858,7 +858,30 @@ footer .arriba{
     transform: translateX(-50%) translateY(0); /* Mostrar desde abajo */
 }
 
+.image-container {
+    width: 100%;
+    max-width: 600px;    
+    height: 300px;       
+    overflow: hidden;
+    margin-right: 20px; /* Añade espacio entre las imágenes */
+    position: relative;
+    border-radius: 5px;
+    border: 5px solid #1CB698;
+    background-color: #ffffffec; /* Asegura que el fondo del contenedor sea blanco */
 
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute; /* Para mantener la imagen fija en el contenedor */
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Transición suave */
+  }
+  
 
 
 /* seccion responsive */
