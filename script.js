@@ -4,7 +4,7 @@
 
    // Redirigir a la versión en español si el idioma es español
    if (userLang.startsWith('en')) {
-	   window.location.href = 'index - ingles';
+	   window.location.href = 'index - ingles.html';
    }
 
 
@@ -89,4 +89,10 @@ function descargarCV() {
     link.href = '-curriculum-vitae-VICTOR.pdf';
     link.download = '-curriculum-vitae-VICTOR.pdf';
     link.click();
+  }
+
+
+  const redirigir=()=>{
+    window.location.href = 'aboutme.html'; // Página en inglés
+
   }
