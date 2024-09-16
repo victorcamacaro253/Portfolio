@@ -237,7 +237,7 @@ function changeImage() {
   currentIndex = (currentIndex + 1) % images.length;
 
   // Animación de fade out para todas las imágenes
-  gsap.to(imageElements, {opacity: 0, duration: 1, onComplete: () => {
+  gsap.to(imageElements, {opacity: 1, duration: 1, onComplete: () => {
     // Cambia el src de todas las imágenes
     imageElements.forEach((img) => {
       img.src = images[currentIndex];
@@ -248,7 +248,7 @@ function changeImage() {
 }
 
 // Cambiar la imagen cada 3 segundos
-setInterval(changeImage, 5000);
+setInterval(changeImage, 2000);
 
 
 
@@ -269,7 +269,7 @@ function changeImagenes() {
   currentIndex = (currentIndex + 1) % imagenes.length;
 
   // Animación de fade out para todas las imágenes
-  gsap.to(imagenesElements, {opacity: 0, duration: 1, onComplete: () => {
+  gsap.to(imagenesElements, {opacity: 1, duration: 1, onComplete: () => {
     // Cambia el src de todas las imágenes
     imagenesElements.forEach((img) => {
       img.src = imagenes[currentIndex];
@@ -280,7 +280,7 @@ function changeImagenes() {
 }
 
 // Cambiar la imagen cada 3 segundos
-setInterval(changeImagenes, 5000);
+setInterval(changeImagenes, 2000);
 
 
 
@@ -300,7 +300,7 @@ function changeImagenes2() {
   currentIndex = (currentIndex + 1) % imagenes2.length;
 
   // Animación de fade out para todas las imágenes
-  gsap.to(imagenesElements, {opacity: 0, duration: 1, onComplete: () => {
+  gsap.to(imagenesElements, {opacity: 1, duration: 1, onComplete: () => {
     // Cambia el src de todas las imágenes
     imagenesElements.forEach((img) => {
       img.src = imagenes2[currentIndex];
@@ -311,7 +311,7 @@ function changeImagenes2() {
 }
 
 // Cambiar la imagen cada 3 segundos
-setInterval(changeImagenes2, 5000);
+setInterval(changeImagenes2, 2000);
 
 gsap.registerPlugin(ScrollTrigger);
 
